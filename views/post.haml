@@ -1,0 +1,8 @@
+%article
+  %header
+    %h1
+      %a{:href => url(article.slug)}= article.title
+    %time.timeago{:datetime => article.time.xmlschema}
+      = article.time.strftime "%Y/%m/%d"
+  %section.content
+    = markdown article.content

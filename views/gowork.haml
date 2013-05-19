@@ -1,0 +1,8 @@
+.row
+  %ul.thumbnails
+    -{'sjtu' => 'www', 'sjtu_acm' => 'acm', 'sjtu_bbs' => 'bbs'}.each do |pic_name, url_prefix|
+      %li.span4
+        %a.thumbnail{href: "http://#{url_prefix}.sjtu.edu.cn"}
+          %img{src: "img/#{pic_name}.jpg"}
+          =pic_name.upcase
+

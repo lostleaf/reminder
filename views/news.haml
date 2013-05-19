@@ -1,0 +1,3 @@
+- news.each do |article|
+  .news.hero-unit
+    = haml :post, :locals => {:article => article}
